@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<meta name="description" content="">
+		<meta name="author" content="">		
+
+        <title>CellPhone Bill Page</title>
+		
+		<link rel="stylesheet" href="css/bootstrap.css" />
+		<link rel="stylesheet" href="css/navbar-fixed-top.css" />
+		<link rel="stylesheet" href="css/carousel.css" />
+		<link rel="stylesheet" href="css/cellphonebill.css" />
+		
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script> <!--Must put before the ajax thing is called-->
+		<script src="js/d3.v3.min.js" charset="utf-8"></script>
+		<script src="js/bill.js" charset="utf-8"></script>			
+
+	</head>
+	
+	<body>
+		<div class="navbar navbar-default navbar-fixed-top" role="navigation">	
+			  <div class="container">
+			  
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="mainpage.php"><img src="img/AT&T_logo_(horizontal).png"></a>
+				</div>
+				
+				<div class="navbar-collapse collapse">
+				  
+				  <ul class="nav navbar-nav navbar-right">
+					<li class=""><a href="#">User</a></li>
+					<li class=""><a href="#">Message</a></li>
+				  </ul>
+				</div><!--/.nav-collapse -->
+				
+			  </div>
+		</div>
+		
+
+
+		<div id="Sidebar">
+			<br>
+			<div style="background:#53646D">
+				<br>
+				<br>
+				<p style="margin:10px;">My Bill</p>
+				<br>
+			</div>
+				<hr style="margin-top:0;">
+				<br>
+			<p style="margin:10px;">Feature Package</p>
+			<br>
+			<hr style="margin-top:0;">
+			<br>
+			<p style="margin:10px;">Account</p>
+			<br>
+			<hr style="margin-top:0;">		
+		</div>
+		
+		<div id="content_frame">
+			<br>
+
+			<h2 style="color:#0096D6; margin-left:42px;">Bill Summary:</h2>
+
+			<div class="col-md-8" id="paymentContent">
+				<h3 style="margin-left:30px;">Your total bill owned for February is:<span style="color:#d01f30;font-size:36px;"> $116.48</span></h3>
+			</div>
+			<div class="col-md-3" id="paybillButton">
+				<button type="button" class="btn btn-primary btn-lg btn-block" style="margin-top:15px;" id="paybill">Pay my Bill</button>
+			</div>
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="thumbnail">
+						<img src="img/detail_ring.png" alt="Bill Details"/>
+					</div>
+				</div>
+			</div>
+
+			
+
+			
+			
+			<h2 style="color:#0096D6; margin-left:42px;">Minutes and Data Usage:</h2>
+			<br>			
+			<div class="row" style="text-align:center;"> 
+			
+			  <div class="col-sm-7 col-md-4">
+				<div class="thumbnail">
+				  <img src="img/ring_chart.png" alt="Ring chart">	  
+				</div>
+				  <div class="caption">
+					<h3 style="color:#0096D6">Minutes used</h3>
+					<p>You've used 63 minutues out of 200 minutes. You have 137 minutes left.</p>
+				  </div>
+			</div>
+			  <div class="col-sm-7 col-md-8">
+				<div class="thumbnail">
+				  <img src="img/data_chart.png" alt="Data Usage">	  
+				</div>
+				  <div class="caption">
+					<h3 style="color:#0096D6">Data used</h3>
+					<p>From Feb 1 to Feb 12, about 1.6Gb has used, as measured by your phone.</p>
+				  </div>
+			 </div>	  						
+			</div>
+			<br>
+			<h2 style="color:#0096D6; margin-left:42px;">Call History</h2>
+			<div class="row" style="text-align:center;"> 
+			  <div class="col-sm-7 col-md-12" style="margin:auto">
+				<div class="thumbnail">
+				  <img src="img/call_history.png" alt="Call History">	  
+				</div>
+			  </div>  						
+			</div>	
+		</div>
+		
+		<div class="blackbarrier" id="blackbg" style="display:none;">
+		</div>
+		<div id="payment_window" style="display:none;">
+			<div class="closewindow" id="closebutton" style="cursor:pointer;">
+			</div>
+			<div class="row" style="text-align:center;"> 
+			  <div class="col-sm-7 col-md-12" style="margin:auto">
+				<div class="thumbnail">
+				  <img src="img/payment-page.png" alt="Payment">	  
+				</div>
+			  </div> 
+				<input type="checkbox" name="Therapist_Login" value="Therapist Login">Remember Me</label>
+				<br>
+				<button type="button" class="btn btn-primary btn-lg" style="margin-top:15px;" id="complete">Complete</button>
+				<br>
+				<br>
+			</div>
+						
+		
+	
+		</div>
+		
+		
+	
+	</body>
+</html>	

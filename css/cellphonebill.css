@@ -1,0 +1,109 @@
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 14px;
+line-height: 1.428571429;
+color: #333333;
+background-color: #f8f8f8;
+}
+
+
+
+/*-------------------Top Bar----------------------------*/
+
+.navbar-default {
+background-color: #0096D6;
+border-color: #00628C;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+color: #ffffff;
+}
+
+
+.navbar > .container .navbar-brand {
+margin-left: -15px;
+}
+
+
+/*-------------------Side Bar----------------------------*/
+
+#Sidebar {
+	width:20%;
+	height:100%;
+	left:0;
+	position:fixed;
+	background-color:#3A464C;
+	color:white;
+}
+
+
+hr {
+margin-top: 10px;
+margin-bottom: 10px;
+border: 0;
+border-top: 1px solid #231F20;
+}
+
+
+
+/*-------------------------Content Frame----------------------------*/
+#content_frame{
+	position:absolute;
+	right:0;
+	width:80%;
+	padding:20px;
+	background-color:#EDEFEE
+
+}
+
+/*-------------------------Mainpage Images----------------------------*/
+
+.thumbnail {
+display: block;
+padding: 4px;
+margin-bottom: 20px;
+line-height: 1.428571429;
+background-color: transparent;
+border: none;
+border-radius: 4px;
+-webkit-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+
+
+
+/*-------------------------Payment Window----------------------------*/
+
+#payment_window{
+	position:absolute;
+	margin-left:25%;
+	margin-top:30px;
+	width:50%;
+	background:#ffffff;
+	border:1px solid f8f8f8;
+	border-radius:8px;
+}
+
+
+	
+.blackbarrier{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:black;
+	opacity:0.8;
+	
+}
+
+
+.closewindow{
+	margin-right:0;
+	margin-top:0;
+	background-image:url('../img/close.png');
+	width:50px;
+	height:50px;
+}
+
+
